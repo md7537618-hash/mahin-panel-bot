@@ -24,4 +24,4 @@ app = Application.builder().token(BOT_TOKEN).build()
 app.add_handler(CommandHandler("start", start))
 
 print("Bot Started...")
-app.run_polling()
+app.run_polling(drop_pending_updates=True)
